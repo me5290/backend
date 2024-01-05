@@ -17,23 +17,23 @@ public class Level2_4 {
 		String player = scanner.next();
 		
 		/* 문제풀이 위치 */
-		if(com == 1){
+		if(com == 0){
 			if(player.equals("가위")){
 				System.out.println("무승부");
 			}else if(player.equals("보")){
 				System.out.println("com 승리");
 			}else{
 				System.out.println("player 승리");
+			}
+		}else if(com == 1){
+			if(player.equals("가위")){
+				System.out.println("com 승리");
+			}else if(player.equals("보")){
+				System.out.println("player 승리");
+			}else{
+				System.out.println("무승부");
 			}
 		}else if(com == 2){
-			if(player.equals("가위")){
-				System.out.println("com 승리");
-			}else if(player.equals("보")){
-				System.out.println("player 승리");
-			}else{
-				System.out.println("무승부");
-			}
-		}else if(com == 3){
 			if(player.equals("가위")){
 				System.out.println("player 승리");
 			}else if(player.equals("보")){
