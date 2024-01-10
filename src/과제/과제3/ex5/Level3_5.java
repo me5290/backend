@@ -14,14 +14,14 @@ public class Level3_5 {
 		String authNumber = "";
 		
 		/* 문제풀이 위치 */
-		Random random = new Random();//랜덤 객체 생성
+		Random random = new Random();
 
 		System.out.print("본인확인 인증번호 : ");
-		int num = random.nextInt(9)+1;
-		authNumber = Integer.toString(num);
 
 		for(int i=0;i<6;i++) {
-			System.out.print(authNumber); //로또번호 출력
+			int num = random.nextInt(9)+1;
+			authNumber = Integer.toString(num);
+			System.out.print(authNumber);
 		}
 		/* ----------- */
 
