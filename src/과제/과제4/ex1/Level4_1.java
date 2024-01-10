@@ -17,8 +17,9 @@ public class Level4_1 {
 		for(int i = 0; i < point.length; i++){
 			System.out.print(point[i]+" ");
 		}
+		System.out.printf("\n");
 		System.out.print("뒤쪽부터 : ");
-		for(int i = 0; i < point.length; i++){
+		for(int i = point.length-1; i >= 0; i--){
 			System.out.print(point[i]+" ");
 		}
 		/* ----------- */

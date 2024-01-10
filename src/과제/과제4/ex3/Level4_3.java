@@ -13,7 +13,28 @@ public class Level4_3 {
 		int[] point = { 97 , 73 ,52 , 76 , 51 };
 
 		/* 문제풀이 위치 */
+		int tmp = 0;
 
+		System.out.print("정렬 전 : ");
+
+		for(int i = 0; i < point.length; i++){
+			System.out.print(point[i] + " ");
+		}
+
+		System.out.println("");
+
+		System.out.print("정렬 후 : ");
+
+		for(int i = 0; i < point.length; i++){
+			for(int j = i+1; j < point.length; j++){
+				if(point[i] > point[j]){
+					tmp = point[i];
+					point[i] = point[j];
+					point[j] = tmp;
+				}
+			}
+			System.out.print(point[i] + " ");
+		}
 		/* ----------- */
 	}
 }

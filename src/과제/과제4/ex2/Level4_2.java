@@ -14,7 +14,15 @@ public class Level4_2 {
 
 		while ( true ) {
 			/* 문제풀이 위치 */
+			System.out.print("배열 길이 : ");
+			int input = scanner.nextInt();
 
+            students = new String[input];
+
+			for(int i = 0; i < students.length; i++){
+				System.out.print(students[i] + " ");
+			}
+			System.out.println("");
 			/* ----------- */
 		}
 	}
