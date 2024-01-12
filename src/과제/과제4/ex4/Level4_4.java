@@ -20,16 +20,16 @@ public class Level4_4 {
 				System.out.print(X_AXIS[i] + " ");
 			}
 			System.out.print("\n1.전진 2.후진 선택> ");
-			int no = scanner.nextInt();
+			x = scanner.nextInt();
 
-			if(no == 1){
+			if(x == 1){
 				String tmp = X_AXIS[0];
 				X_AXIS[0] = X_AXIS[X_AXIS.length-1];
 				for(int i = X_AXIS.length-2; i >= 0; i--){
 					X_AXIS[i+1] = X_AXIS[i];
 				}
 				X_AXIS[1] = tmp;
-			}else if(no == 2){
+			}else if(x == 2){
 				String tmp = X_AXIS[X_AXIS.length-1];
 				X_AXIS[X_AXIS.length-1] = X_AXIS[0];
 				for(int i = 0; i <= X_AXIS.length-2; i++){
