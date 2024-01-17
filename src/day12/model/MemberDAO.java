@@ -1,7 +1,7 @@
 package day12.model;
 
 import java.util.ArrayList;
-import org.apache.commons.lang3.RandomStringUtils;
+//import org.apache.commons.lang3.RandomStringUtils;
 
 // DAO : 데이터베이스 접근객체
 public class MemberDAO {
@@ -79,11 +79,13 @@ public class MemberDAO {
         for(int i = 0; i < memberDTOS.size(); i++){
             if(memberDTOS.get(i).getId().equals(memberDTO.getId())){
                 if(memberDTOS.get(i).getPhone().equals(memberDTO.getPhone())){
-                    String randomPw = RandomStringUtils.randomAlphanumeric(6);
-                    return randomPw;    // 아이디찾기 성공
+                    //String randomPw = RandomStringUtils.randomAlphanumeric(6);
+                    //return randomPw;    // 아이디찾기 성공
                 }
             }
+            return "false";
         }
+        return null;
     }
 }
 //for(int i = 0; i < memberDTOs.length; i++){
