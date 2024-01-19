@@ -34,7 +34,6 @@ public class MemberDAO {
             }
             return false;
         }
-        memberDTOS.add(memberDTO);
 
         return true;    // 회원가입 성공
     }
