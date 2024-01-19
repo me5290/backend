@@ -24,7 +24,7 @@ public class BankDao {
     }
 
     public int 계좌찾기(){
-        // 신한 배열 찾아서 입력한 계좌번호가 저장된 계좌번호랑 일치하면 1 반환
+        // 배열 찾아서 입력한 계좌번호가 저장된 계좌번호랑 일치하면 1 반환
         for(int i = 0; i < bankArray; i++){
             if(bankArray.get(i).get계좌번호().equals(은행객체.get계좌번호())){
                 return bankArray.get(i).get은행코드();
@@ -35,25 +35,32 @@ public class BankDao {
     }
 
     public boolean 입금(){
-        if(은행번호 == 1){
-            bankArray.add(마일리지);
-            return true;
-        }else if(은행번호 == 2){
-            bankArray.add(쿠폰);
-            return true;
-        }else if(은행번호 == 2){
-            bankArray.add(포인트);
+        for(int i = 0; i < bankArray; i++){
+            // 배열에 있는 계좌와 입력한 계좌가 일치하면 해당 인덱스의 금액에 입력한 금액 +
+            if(bankArray.get(i).get계좌번호().equals(은행객체.get계좌번호())){
+                bankArray.get(i).get금액() += 입력한입금액;
+            }
+
+            // 은행별로 마일리지,쿠폰,포인트 배열에 저장
+            if(은행번호 == 1){
+                bankArray.add(마일리지);
+            }else if(은행번호 == 2){
+                bankArray.add(쿠폰);
+            }else if(은행번호 == 2){
+                bankArray.add(포인트);
+            }
+
             return true;
         }
         return false;
     }
 
     public boolean 출금(){
-        if(은행번호 == 1){
-            return true;
-        }else if(은행번호 == 2){
-            return true;
-        }else if(은행번호 == 2){
+        for(int i = 0; i < bankArray; i++){
+            // 배열에 있는 계좌와 입력한 계좌가 일치하면 해당 인덱스의 금액에 입력한 금액 -
+            if(bankArray.get(i).get계좌번호().equals(은행객체.get계좌번호())){
+                bankArray.get(i).get금액() -= 입력한출금액;
+            }
             return true;
         }
         return false;
