@@ -1,11 +1,11 @@
-package 조별과제3.model;
+package team과제.team과제3.model;
 
 import java.util.ArrayList;
-import 조별과제3.model.BankDto;
-import 조별과제3.model.ShDto;
-import 조별과제3.model.KbDto;
-import 조별과제3.model.NhDto;
-import 조별과제3.controller.Controller;
+import team과제.team과제3.model.BankDto;
+import team과제.team과제3.model.ShDto;
+import team과제.team과제3.model.KbDto;
+import team과제.team과제3.model.NhDto;
+import team과제.team과제3.controller.Controller;
 
 public class BankDao {
     // 싱글톤

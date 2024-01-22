@@ -1,6 +1,6 @@
-package 조별과제3;
+package team과제.team과제3;
 
-import 조별과제3.view.View;
+import team과제.team과제3.view.View;
 
 import java.util.Scanner;
 

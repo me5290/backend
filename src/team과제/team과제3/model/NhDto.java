@@ -1,4 +1,4 @@
-package 조별과제3.model;
+package team과제.team과제3.model;
 
 public class NhDto extends BankDto{
 
