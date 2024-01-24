@@ -16,16 +16,22 @@
 				특정필드 : insert into 테이블명(필드명 , 필드명) values(값1 , 값2);
                 모든필드 : insert into 테이블명 values(값1 , 값2);
 			select : 레코드 검색
+				특정필드 : select 필드명1 , 필드명2 from 테이블명;
 				모든필드(*와일드카드)의 레코드 검색 : select * from 테이블명;
             update : 레코드의 필드 값 변경
-				update 테이블명 set 수정할필드명 = 수정할값 , 수정할필드명 = 수정할값;
-			delete : 레코드 삭제
-				delete from 테이블명;
+				특정 : update 테이블명 set 수정할필드명 = 수정할값 , 수정할필드명 = 수정할값 where 조건식;
+				모든 : update 테이블명 set 수정할필드명 = 수정할값 , 수정할필드명 = 수정할값;
+            delete : 레코드 삭제
+				특정 : delete from 테이블명 where 조건식;
+				모든 : delete from 테이블명;
             
 			- 제약조건
 				1. not null
                 2. unique
                 3. default 기본값
+                
+			- 조건절
+				where
 */
 # 1. 데이터베이스 생성/사용
 drop database if exists test4;
