@@ -18,7 +18,7 @@ public class Car2 {
         // static은 객체없이 사용하는 메소드/필드 이니까 this가 없다
     }
     void simulate2(){     // 인스턴스 메소드
-        System.out.println(this.speed);     // 인스턴스 메소드에서 인스턴스필드 호출 불가능
+        System.out.println(this.speed);     // 인스턴스 메소드에서 인스턴스필드 호출 가능
         System.out.println(speed2);         // 인스턴스 메소드에서 정적필드 호출 가능
     }
 
